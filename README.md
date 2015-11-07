@@ -15,11 +15,11 @@ How to compile
 
 You need to have a c++ compiler and the SDL2 library, so if you are using a debian/raspbian/ubuntu, first install the dependencies:
 
-    sudo apt-get install g++ make libsdl2-dev libsdl2-image-dev
+    sudo apt-get install g++ make qt5-qmake libsdl2-dev libsdl2-image-dev
 
 then
 
-    make
+    qmake -makefile clock.pro && make
     
 This should give you a 'clock' executable.
 
